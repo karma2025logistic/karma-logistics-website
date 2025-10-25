@@ -139,7 +139,6 @@
   </div>
 
   <!-- FORM SCRIPT -->
-  <script src="script.js"></script>
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
 
@@ -152,39 +151,35 @@
       statusMsg.textContent = '';
     });
 
+    // ✅ Use your live Google Apps Script Web App URL here
+    const GOOGLE_SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfycby9_KSIxmU2orZF39WFl2mkJg6dwTzseNssflKyyhJnnNUzh_UM56sJxsM1Q7-kBqx6/exec";
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       statusMsg.textContent = "Sending your enquiry...";
 
       const data = {
         name: form.name.value.trim(),
-        email: form.email.value.trim(),
         phone: form.phone.value.trim(),
+        email: form.email.value.trim(),
         message: form.message.value.trim()
       };
 
-      // ✅ Placeholder backend endpoint (Step 2 will replace this)
-      const ENDPOINT = "https://karma-logistics-api.onrender.com/api/enquiry";
-
-
-
       try {
-        const res = await fetch(ENDPOINT, {
+        const res = await fetch(GOOGLE_SHEET_WEBAPP_URL, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data)
+          body: JSON.stringify(data),
         });
 
-        const result = await res.json();
         if (res.ok) {
-          statusMsg.textContent = result.message || "Thank you! Your enquiry has been received.";
+          statusMsg.textContent = "✅ Thank you! Your enquiry has been submitted successfully.";
           form.reset();
         } else {
-          statusMsg.textContent = "Something went wrong. Please try again.";
+          statusMsg.textContent = "⚠️ Something went wrong. Please try again.";
         }
       } catch (err) {
         console.error(err);
-        statusMsg.textContent = "Network error. Please check your connection.";
+        statusMsg.textContent = "⚠️ Network error. Please try again.";
       }
     });
   </script>
