@@ -1,13 +1,34 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact Us | KARMA Worldwide Logistics LLP</title>
-  <meta name="description" content="Contact KARMA Worldwide Logistics LLP — Get in touch for logistics, warehousing, and freight solutions. Request a quote or send an enquiry." />
+  <meta name="description"
+    content="Contact KARMA Worldwide Logistics LLP — Get in touch for logistics, warehousing, and freight solutions. Request a quote or send an enquiry." />
   <link rel="icon" href="logo.png" />
   <link rel="stylesheet" href="style.css">
 </head>
+<style>
+  @media (max-width: 1324px) {
+    .page-hero {
+      background-position: center center !important;
+      min-height: 300px;
+    }
+  }
+
+  /* Mobile screens */
+  @media (max-width: 768px) {
+    .page-hero {
+      background-position: center center !important;
+      background-size: contain;
+      /* keep full image visible */
+      min-height: 260px;
+    }
+  }
+</style>
+
 <body>
   <div class="site-wrapper">
 
@@ -20,7 +41,7 @@
           </a>
           <div class="brand-text">
             <div class="brand-title">KARMA Worldwide Logistics LLP</div>
-            <div class="brand-tagline">Logistics beyond innovation</div>
+            <div class="brand-tagline">Logistics Beyond Innovation</div>
           </div>
         </div>
 
@@ -38,10 +59,18 @@
     </header>
 
     <!-- PAGE HERO -->
-    <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center center;color:white;text-shadow:0 6px 20px rgba(0,0,0,0.5);padding:100px 0;">
+    <section class="page-hero" style="background:
+           linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+           url(img_contact_us/contact_top.jpg) center/cover no-repeat;
+           color:#fff;
+           padding:100px 0;
+           text-shadow:0 4px 10px rgba(0,0,0,0.7);
+           background-size:cover;
+           background-position:center -180px" ;>
       <div class="container">
         <h1>Contact Us</h1>
-        <p style="max-width:700px;font-size:18px;">We’d love to hear from you. Reach out for any logistics, warehousing, or transport queries — we’re here to help!</p>
+        <p style="max-width:700px;font-size:18px;">We’d love to hear from you. Reach out for any logistics, warehousing,
+          or transport queries — we’re here to help!</p>
       </div>
     </section>
 
@@ -49,7 +78,8 @@
     <section class="section">
       <div class="container">
         <h2>Send Us an Enquiry</h2>
-        <p class="muted" style="max-width:900px;">Please fill out the form below and our representative will contact you soon regarding your query or quote request.</p>
+        <p class="muted" style="max-width:900px;">Please fill out the form below and our representative will contact you
+          soon regarding your query or quote request.</p>
 
         <div class="cards" style="margin-top:24px;align-items:flex-start;flex-wrap:wrap;">
           <div class="service-card" style="flex:1;min-width:300px;">
@@ -61,12 +91,12 @@
 
               <div style="margin-top:10px">
                 <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="tel" required placeholder="+91 9990575767" />
+                <input id="phone" name="phone" type="tel" required placeholder="Your phone number" />
               </div>
 
               <div style="margin-top:10px">
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email" required placeholder="info@company.com" />
+                <input id="email" name="email" type="email" required placeholder="E-Mail Address" />
               </div>
 
               <div style="margin-top:10px">
@@ -83,7 +113,7 @@
           </div>
 
           <div class="service-card" style="flex:1;min-width:280px;">
-            <h3>Head Office Address</h3>
+            <h3>Corporate Office Address</h3>
             <p class="muted">Universal Square, Sector 79, Faridabad, Faizupur Majra Neemka, Haryana 121002, India</p>
             <h3 style="margin-top:12px;">Phone</h3>
             <p class="muted"><a href="tel:+919990575767">+91 9990575767</a></p>
@@ -91,6 +121,7 @@
             <p class="muted"><em>info.karmalogistics@gmail.com</em></p>
             <h3 style="margin-top:20px;">Office Hours</h3>
             <p class="muted">Mon–Fri: 9:00 AM – 6:00 PM<br>Saturday: 9:00 AM – 1:00 PM<br>Sunday: Closed</p>
+            <br><br><br><br><br><br><br>
           </div>
         </div>
       </div>
@@ -103,6 +134,57 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7001.892229732469!2d77.3331833!3d28.3662246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc71c9022e8a3%3A0xa8f29ad7d457f7f5!2sSector%2079%2C%20Faridabad%2C%20Haryana!5e0!3m2!1sen!2sin!4v1695821047342!5m2!1sen!2sin"
           width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
+    </section><br>
+
+
+    <!-- Partners carousel — place this directly above the footer -->
+    <!-- Partner Logo Slider (Smooth Snake-Style Infinite Loop) -->
+    <section class="partners-slider">
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="img_clients/adani.jpeg" alt="adani">
+          <img src="img_clients/amazon.jpeg" alt="amazon">
+          <img src="img_clients/asian.jpeg" alt="asian">
+          <img src="img_clients/british_paints.jpeg" alt="british_paints">
+          <img src="img_clients/ceat.jpeg" alt="ceat">
+          <img src="img_clients/cropton.jpeg" alt="crop">
+          <img src="img_clients/flipkart.jpeg" alt="flipkart">
+          <img src="img_clients/gillete.jpeg" alt="gillete">
+          <img src="img_clients/haldiram.jpeg" alt="haldiram">
+          <img src="img_clients/havells.jpeg" alt="havells">
+          <img src="img_clients/itc.jpeg" alt="ITC">
+          <img src="img_clients/jktyre.jpeg" alt="jktyre">
+          <!-- <img src="img_clients/lg.jpeg" alt="CTTI"> -->
+          <img src="img_clients/mrf.jpeg" alt="mrf">
+          <img src="img_clients/nestle.jpeg" alt="nestle">
+          <img src="img_clients/p&g.jpeg" alt="p&g">
+          <img src="img_clients/samsung.jpeg" alt="samsung">
+          <img src="img_clients/schre.jpeg" alt="schre">
+          <img src="img_clients/usha.jpeg" alt="usha">
+        </div>
+        <!-- Duplicate for seamless infinite scroll -->
+        <div class="logos-slide">
+          <img src="img_clients/adani.jpeg" alt="adani">
+          <img src="img_clients/amazon.jpeg" alt="amazon">
+          <img src="img_clients/asian.jpeg" alt="asian">
+          <img src="img_clients/british_paints.jpeg" alt="british_paints">
+          <img src="img_clients/ceat.jpeg" alt="ceat">
+          <img src="img_clients/cropton.jpeg" alt="crop">
+          <img src="img_clients/flipkart.jpeg" alt="flipkart">
+          <img src="img_clients/gillete.jpeg" alt="gillete">
+          <img src="img_clients/haldiram.jpeg" alt="haldiram">
+          <img src="img_clients/havells.jpeg" alt="havells">
+          <img src="img_clients/itc.jpeg" alt="ITC">
+          <img src="img_clients/jktyre.jpeg" alt="jktyre">
+          <!-- <img src="img_clients/lg.jpeg" alt="CTTI"> -->
+          <img src="img_clients/mrf.jpeg" alt="mrf">
+          <img src="img_clients/nestle.jpeg" alt="nestle">
+          <img src="img_clients/p&g.jpeg" alt="p&g">
+          <img src="img_clients/samsung.jpeg" alt="samsung">
+          <img src="img_clients/schre.jpeg" alt="schre">
+          <img src="img_clients/usha.jpeg" alt="usha">
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
@@ -110,8 +192,8 @@
       <div class="container footer-inner">
         <div class="footer-col">
           <img src="logo.png" alt="Karma logo" class="footer-logo" />
-          <p class="muted">KARMA Worldwide Logistics LLP — Logistics beyond innovation</p>
-          <p class="small muted">Head Office: Universal Square, Sector 79, Faridabad, Faizupur Majra Neemka, Haryana 121002, India</p>
+          <!-- <p class="muted">KARMA Worldwide Logistics LLP — Logistics beyond innovation</p>
+          <p class="small muted">Head Office: Universal Square, Sector 79, Faridabad, Faizupur Majra Neemka, Haryana 121002, India</p> -->
         </div>
 
         <div class="footer-col">
@@ -126,14 +208,18 @@
         </div>
 
         <div class="footer-col">
-          <h4>Contact</h4>
-          <p class="muted">Phone: <a href="tel:+919990575767">+91 9990575767</a></p>
+          <h4>Corporate Office of KARMA Worldwide Logistics LLP</h4><br>
+          <p class="muted">Address: Universal Square, Sector 79, Faridabad, Faizupur Majra Neemka, Haryana 121002, India
+          </p>
+          <p class="muted">Phone: <a href="tel:+919990575767">+91 9990575767</a> <a href="tel:+918887166666">+91
+              8887166666</a></p>
           <p class="muted">Email: <em>info.karmalogistics@gmail.com</em></p>
         </div>
       </div>
 
       <div class="container copyright">
-        <small class="muted">© <span id="yr"></span> KARMA Worldwide Logistics LLP — All rights reserved.</small>
+        <small class="muted">Copyright © <span id="yr"></span> KARMA Worldwide Logistics LLP . All rights
+          reserved.</small>
       </div>
     </footer>
   </div>
@@ -182,6 +268,34 @@
         statusMsg.textContent = "⚠️ Network error. Please try again.";
       }
     });
+    // ✅ Ensure mobile menu works after DOM load
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.getElementById("mobileMenuBtn");
+      const body = document.body;
+      const nav = document.querySelector(".main-nav");
+
+      if (!btn || !nav) return;
+
+      btn.addEventListener("click", () => {
+        body.classList.toggle("mobile-menu-open");
+
+        // Optional: Change ☰ → ✕ when open
+        if (body.classList.contains("mobile-menu-open")) {
+          btn.textContent = "✕";
+        } else {
+          btn.textContent = "☰";
+        }
+      });
+
+      // Close menu when link clicked
+      nav.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          body.classList.remove("mobile-menu-open");
+          btn.textContent = "☰";
+        });
+      });
+    });
   </script>
 </body>
+
 </html>
