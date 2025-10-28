@@ -8,7 +8,7 @@
 */
 
 // =============== HERO SLIDER ===============
-(function() {
+(function () {
   const slider = document.getElementById("heroSlider");
   if (!slider) return; // run only on pages that have a heroSlider
 
@@ -70,7 +70,7 @@
 })();
 
 // =============== MOBILE MENU TOGGLE ===============
-(function() {
+(function () {
   const btn = document.getElementById("mobileMenuBtn");
   const body = document.body;
   if (!btn) return;
@@ -96,3 +96,16 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.15 });
 animatedEls.forEach(el => observer.observe(el));
+
+
+// optional: ensure the track width is >= 2x set width for seamless scroll
+(function () {
+  const track = document.querySelector('.partners-track');
+  if (!track) return;
+  // If JS is available, duplicate logos programmatically (defensive)
+  const sets = track.querySelectorAll('.partners-set');
+  if (sets.length === 1) {
+    const clone = sets[0].cloneNode(true);
+    track.appendChild(clone);
+  }
+})();
